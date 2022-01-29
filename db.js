@@ -12,7 +12,6 @@ if(process.env.NODE_ENV === 'development') {
     }
   )
 } else if(process.env.NODE_ENV === 'production') {
-  console.log('wew')
   module.exports = new Sequelize(
     process.env.DATABASE_URL,
     {

@@ -82,7 +82,7 @@ class DeviceController {
           if(e) throw e
         })
       }
-      return res.json({message: `Бренд с ID ${id} успешно удален`})
+      return res.json({message: `Устройство с ID ${id} успешно удалено`})
     } catch (err) {
       next(ApiError.internalServerError('Что-то пошло не так'))
     }
